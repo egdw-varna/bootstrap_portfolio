@@ -1,0 +1,337 @@
+.home-section {
+  position: relative; /* Ensure the section is relatively positioned */
+  overflow: hidden; /* Hide any overflow content */
+}
+.anim-elements{
+  position: absolute; 
+   top: 50;
+  
+  left: 0; 
+   width: 90%;
+  height:90%;
+  overflow: hidden; 
+   /* z-index: -1; */
+   
+} 
+.anim-elements .anim-elements{
+  position: absolute;
+  font-size:30px;
+
+}
+.anim-elements .anim-elements:nth-child(1){
+  top: 1%;
+  left: 15%;
+  color: orange;
+  animation: aniOne 15s infinite linear alternate;
+}
+.anim-elements .anim-elements:nth-child(2){
+  top: 1%;
+  left: 45%;
+  color: orange;
+  animation: aniOne 15s infinite linear alternate;
+}
+.anim-elements .anim-elements:nth-child(3){
+  top: 2%;
+  left: 30%;
+  color:  orange;
+  animation: aniOne 13s infinite linear alternate;
+}
+.anim-elements .anim-elements:nth-child(4){
+  top: 1%;
+  left: 25%;
+  color:  orange;
+  animation: aniOne 15s infinite linear alternate;
+}
+.anim-elements .anim-elements:nth-child(5){
+  top: 1%;
+  left: 27%;
+  color:  orange;
+  animation: aniOne 16s infinite linear alternate;
+}
+@keyframes aniOne {
+
+0% {transform: translate(0, 0) rotate(0);}
+
+ 40% {transform: translate(141px, 72px) rotate(75deg);}
+
+
+
+80% {transform: translate(-40px, 72px) rotate(145deg);}
+
+100% {transform: translate(0, 0) rotate(0);}
+}
+
+
+.bg-gray {
+  /* background-color: rgba(254, 196, 72, 0.1); */
+  background-color: rgb(248, 248, 230);
+}
+
+.bg-1 {
+  background-color: #98d3d0;
+}
+
+.bg-2 {
+  background-color: #fec447;
+}
+
+.bg-3 {
+  background-color: #feccb5;
+}
+
+.bg-4 {
+  background-color: #92b5ff;
+}
+
+.bg-5 {
+  background-color: #c4d39b;
+}
+
+.bg-6 {
+  background-color: #d2ceff;
+}
+
+.home-section {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.home-section .home-intro h6 {
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin: 0 0 30px;
+}
+.home-section .home-intro h1 {
+  font-size: 50px;
+  margin: 0 0 35px;
+  line-height: 1;
+}
+.home-section .home-intro h1 span {
+  border-bottom: 2px solid #ffc448;
+}
+
+.home-section .home_image img {
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  position: relative;
+  border: 5px solid #ff651c;
+  box-shadow: 0 0 0 0 #ff651c;
+  z-index: -2;
+}
+.home-section .home_image img:hover {
+  box-shadow: 10px 10px 5px 5px #ff651c;
+}
+
+.section {
+  padding: 100px;
+  position: relative;
+}
+
+.about-text p {
+  font-size: 15px;
+}
+
+.section-heading {
+  padding-bottom: 60px;
+  text-align: center;
+}
+.section-heading h3 {
+  font-size: 50px;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.feature-box {
+  padding: 40px;
+  border: 2px solid #373737;
+  box-shadow: 0 0 0 0 #373737;
+  display: flex;
+  transition: 0.3s;
+}
+.feature-box:hover {
+  box-shadow: 5px 5px 0 0 #373737;
+}
+.feature-box .icon img {
+  width: 70px;
+  height: 70px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #373737;
+  background: #fff;
+}
+.feature-box .content {
+  max-width: calc(100% - 70px);
+  padding-left: 20px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: #555;
+}
+
+img {
+  padding: 0;
+}
+
+a {
+  color: #ff651c;
+  text-decoration: none;
+}
+a:hover {
+  color: #cb612f;
+  text-decoration: none;
+}
+
+.text-primary {
+  color: #ff651c !important;
+}
+
+.text-dark {
+  color: #373737;
+}
+
+.bg-dark {
+  background-color: #373737;
+}
+
+.main-header {
+  color: #ff651c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  background: transparent;
+  transition: 0.3s background;
+}
+.main-header .navbar {
+  padding: 15px 0;
+}
+.main-header .navbar-nav > li {
+  padding: 0 10px;
+}
+.main-header .navbar-nav > li > .nav-link {
+  padding: 0 5px;
+  line-height: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #373737;
+  letter-spacing: 3px;
+  position: relative;
+}
+.main-header .navbar-nav > li > .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  width: 0;
+  background: #ff651c;
+  height: 2px;
+  transition: ease all 0.3s;
+}
+.main-header .navbar-nav > li > .nav-link:hover {
+  color: #ff651c;
+}
+.main-header .navbar-nav li .nav-link:hover::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.colored_btn {
+  padding: 8px 20px;
+  border: 2px solid #ff651c;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: ease all 0.3s;
+  color: #fff;
+  background: #ff651c;
+  box-shadow: 6px 6px 0px -1px gray;
+}
+.colored_btn:hover {
+  color: #fff;
+  background: gray;
+  border-color: gray;
+  box-shadow: 5px 5px 0 -2px #ff651c;
+}
+.feature-box-Small {
+  padding: 15px;
+}
+.feature-box-Small h6 {
+  margin-left: -10px;
+}
+
+.image img {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  top: 60px;
+  left: 50px;
+}
+
+.project1 .project-img img {
+  position: relative;
+  border: 2px solid #373737;
+  box-shadow: 0 0 0 0 #373737;
+  transition: 0.3s;
+}
+.project1 .project-img img:hover {
+  box-shadow: 5px 5px 0 0 #373737;
+}
+
+.project-text span {
+  padding: 8px 20px;
+  display: inline-block;
+  background-color: rgba(255, 101, 28, 0.2);
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 30px;
+  margin-bottom: 18px;
+}
+
+.contact-form {
+  border: 2px solid #373737;
+  padding: 35px;
+}
+.contact-form .form-control {
+  border: 2px solid #373737;
+  border-radius: 0;
+}
+
+.contact-info {
+  list-style: none;
+}
+.contact-info li {
+  display: flex;
+}
+.contact-info .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: #373737;
+  font-size: 25px;
+}
+.contact-info h5 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: lightgray;
+  font-size: 16px;
+}
+.contact-info p {
+  font-size: 20px;
+  color: white;
+}
+
+.icons:hover {
+  box-shadow: 5px 5px 5px 5px white;
+}/*# sourceMappingURL=style.css.map */
